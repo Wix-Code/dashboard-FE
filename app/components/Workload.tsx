@@ -8,7 +8,7 @@ const Workload = () => {
     <div className='bg-white flex-[73%] p-4'>
       <div className='flex items-center justify-between'>
         <p className='text-[#0A1629] text-[18px] font-bold'>Workload</p>
-        <Link className='text-[14px] flex items-center gap-1 text-[#3F8CFF]' href="/workload">
+        <Link className='text-[14px] flex items-center gap-1 text-[#3F8CFF]' href="/nearest-events">
           <p>View all</p>
           <ChevronRightIcon className='w-[16px]' />
         </Link>

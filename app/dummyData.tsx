@@ -1,4 +1,4 @@
-import { Calendar, FolderOpen, Layers, LayoutGrid } from "lucide-react";
+import { Calendar, FolderOpen, Layers, LayoutGrid, Mails, Plane, UsersRound } from "lucide-react";
 
 type SideBarLinks = {
   id: number;
@@ -44,19 +44,19 @@ export const sideBarLinks: SideBarLinks[] = [
   {
     id: 4,
     name: "Vacations",
-    icon: <LayoutGrid className="w-[18px]"/>,
+    icon: <Plane className="w-[18px]"/>,
     link: "/vacations"
   },
   {
     id: 5,
     name: "Employees",
-    icon: <LayoutGrid className="w-[18px]" />,
+    icon: <UsersRound className="w-[18px]" />,
     link: "/employees"
   },
   {
     id: 6,
     name: "Messenger",
-    icon: <LayoutGrid className="w-[18px]"/>,
+    icon: <Mails className="w-[18px]"/>,
     link: "/messenger"
   },
   {
