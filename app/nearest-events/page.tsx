@@ -11,7 +11,7 @@ const NearestEvent = () => {
         <p className='text-[14px] text-[#3F8CFF] font-bold'>Back to Dashboard</p>
       </Link>
       <div className='flex items-center justify-between'>
-        <p className='text-[34px] text-[#0A1629] font-bold'>Nearest Events</p>
+        <p className='text-[30px] text-[#0A1629] font-bold'>Nearest Events</p>
         <button className='bg-[#3F8CFF] text-white text-[14px] font-bold px-4 py-2.5 rounded-[12px] flex items-center gap-1'>
           <Plus className='w-[18px]' />
           Add Event

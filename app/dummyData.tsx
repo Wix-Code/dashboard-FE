@@ -19,7 +19,11 @@ type Workers = {
   name: string;
   role: string;
   level: string;
+  gender?: string;
+  fullAge?: number;
+  email?: string;
   image: string;
+  dob: string;
 }
 
 export const sideBarLinks: SideBarLinks[] = [
@@ -93,6 +97,9 @@ export const workers: Workers[] = [
     id: 1,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -100,6 +107,9 @@ export const workers: Workers[] = [
     id: 2,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -107,6 +117,9 @@ export const workers: Workers[] = [
     id: 3,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -114,6 +127,9 @@ export const workers: Workers[] = [
     id: 4,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -121,6 +137,9 @@ export const workers: Workers[] = [
     id: 5,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -128,6 +147,9 @@ export const workers: Workers[] = [
     id: 6,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -135,6 +157,9 @@ export const workers: Workers[] = [
     id: 7,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -142,6 +167,9 @@ export const workers: Workers[] = [
     id: 8,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    fullAge: 25,
+    email: "ogbonna428@gmail.com",
+    dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
