@@ -36,6 +36,15 @@ type Vacation = {
   sickLeave: number;
 }
 
+type Request = {
+  id: number;
+  type: string;
+  status?: string;
+  endDay?: string;
+  startDay?: string;
+  duration: string;
+}
+
 export const sideBarLinks: SideBarLinks[] = [
   {
     id: 1,
@@ -266,4 +275,55 @@ export const vacation: Vacation[] = [
     workRemote: 20,
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
+]
+
+export const requests: Request[] = [
+  {
+    id: 1,
+    startDay: "July 02, 2025",
+    endDay: "July 04, 2025",
+    duration: "3 days",
+    status: "Pending",
+    type: "Work remotely"
+  },
+  {
+    id: 2,
+    startDay: "July 02, 2025",
+    endDay: "July 04, 2025",
+    duration: "3 days",
+    status: "Pending",
+    type: "Sick Leave"
+  },
+  {
+    id: 3,
+    startDay: "July 02, 2025",
+    endDay: "July 04, 2025",
+    duration: "3 days",
+    status: "Approved",
+    type: "Work remotely"
+  },
+  {
+    id: 4,
+    startDay: "July 02, 2025",
+    endDay: "July 04, 2025",
+    duration: "3 days",
+    status: "Approved",
+    type: "Sick Leave"
+  },
+  {
+    id: 5,
+    startDay: "July 02, 2025",
+    endDay: "July 04, 2025",
+    duration: "3 days",
+    status: "Pending",
+    type: "Vacation"
+  },
+  {
+    id: 6,
+    startDay: "July 02, 2025",
+    endDay: "July 04, 2025",
+    duration: "3 days",
+    status: "Approved",
+    type: "Sick Leave"
+  }
 ]
