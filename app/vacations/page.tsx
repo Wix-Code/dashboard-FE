@@ -4,31 +4,32 @@ import { Plus } from "lucide-react";
 import React, { useState } from "react";
 import Lists from "../components/employees/Lists";
 import Activity from "../components/employees/Activity";
+import EmployeesVacation from "../components/vacation/EmployeesVacation";
 
 const Page = () => {
-  const [activeTab, setActiveTab] = useState<"list" | "activity">("list");
+  const [activeTab, setActiveTab] = useState<"employee" | "calendar">("employee");
 
   return (
     <div>
       <div className="flex mb-5 items-center justify-between">
-        <p className="text-[26px] text-[#0A1629] font-bold">Employees (28)</p>
+        <p className="text-[26px] text-[#0A1629] font-bold">Vacation</p>
 
-        <div className="bg-[#E6EDF5] flex p-1 items-center w-[300px] rounded-[40px] h-[40px]">
+        <div className="bg-[#E6EDF5] flex p-1 items-center w-[400px] rounded-[40px] h-[40px]">
           <button
-            onClick={() => setActiveTab("list")}
+            onClick={() => setActiveTab("employee")}
             className={`w-full h-full cursor-pointer rounded-[30px] text-sm font-medium ${
-              activeTab === "list" ? "bg-[#3F8CFF] text-white" : "text-[#0A1629]"
+              activeTab === "employee" ? "bg-[#3F8CFF] text-white" : "text-[#0A1629]"
             }`}
           >
-            Lists
+            Employees' Vacations
           </button>
           <button
-            onClick={() => setActiveTab("activity")}
+            onClick={() => setActiveTab("calendar")}
             className={`w-full h-full cursor-pointer rounded-[30px] text-sm font-medium ${
-              activeTab === "activity" ? "bg-[#3F8CFF] text-white" : "text-[#0A1629]"
+              activeTab === "calendar" ? "bg-[#3F8CFF] text-white" : "text-[#0A1629]"
             }`}
           >
-            Activity
+            Calendar
           </button>
         </div>
 
@@ -39,7 +40,7 @@ const Page = () => {
       </div>
 
       <div>
-        {activeTab === "list" ? <Lists /> : <Activity />}
+        {activeTab === "employee" ? <EmployeesVacation /> : <Activity />}
       </div>
     </div>
   );

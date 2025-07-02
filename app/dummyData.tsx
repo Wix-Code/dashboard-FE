@@ -26,6 +26,16 @@ type Workers = {
   dob: string;
 }
 
+type Vacation = {
+  id: number;
+  name: string;
+  vacationsNum?: number;
+  workRemote?: number;
+  email?: string;
+  image: string;
+  sickLeave: number;
+}
+
 export const sideBarLinks: SideBarLinks[] = [
   {
     id: 1,
@@ -99,6 +109,7 @@ export const workers: Workers[] = [
     role: "Developer",
     fullAge: 25,
     email: "ogbonna428@gmail.com",
+    gender: "male",
     dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
@@ -109,6 +120,7 @@ export const workers: Workers[] = [
     role: "Developer",
     fullAge: 25,
     email: "ogbonna428@gmail.com",
+    gender: "female",
     dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
@@ -119,6 +131,7 @@ export const workers: Workers[] = [
     role: "Developer",
     fullAge: 25,
     email: "ogbonna428@gmail.com",
+    gender: "female",
     dob: "Feb 15th, 2000",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
@@ -128,6 +141,7 @@ export const workers: Workers[] = [
     name: "Ogbonna Wisdom",
     role: "Developer",
     fullAge: 25,
+    gender: "female",
     email: "ogbonna428@gmail.com",
     dob: "Feb 15th, 2000",
     level: "Senior",
@@ -138,6 +152,7 @@ export const workers: Workers[] = [
     name: "Ogbonna Wisdom",
     role: "Developer",
     fullAge: 25,
+    gender: "male",
     email: "ogbonna428@gmail.com",
     dob: "Feb 15th, 2000",
     level: "Senior",
@@ -147,6 +162,7 @@ export const workers: Workers[] = [
     id: 6,
     name: "Ogbonna Wisdom",
     role: "Developer",
+    gender: "female",
     fullAge: 25,
     email: "ogbonna428@gmail.com",
     dob: "Feb 15th, 2000",
@@ -160,6 +176,7 @@ export const workers: Workers[] = [
     fullAge: 25,
     email: "ogbonna428@gmail.com",
     dob: "Feb 15th, 2000",
+    gender: "female",
     level: "Senior",
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
@@ -170,7 +187,83 @@ export const workers: Workers[] = [
     fullAge: 25,
     email: "ogbonna428@gmail.com",
     dob: "Feb 15th, 2000",
+    gender: "female",
     level: "Senior",
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+]
+
+export const vacation: Vacation[] = [
+  {
+    id: 1,
+    name: "Ogbonna Wisdom",
+    workRemote: 25,
+    email: "ogbonna428@gmail.com",
+    sickLeave: 24,
+    vacationsNum: 10,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 2,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 3,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 4,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 5,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 6,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 7,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
+  },
+  {
+    id: 8,
+    name: "Ogbonna Wisdom",
+    sickLeave: 25,
+    email: "ogbonna428@gmail.com",
+    vacationsNum: 10,
+    workRemote: 20,
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg"
   },
 ]
