@@ -3,7 +3,22 @@ import React from 'react'
 
 const MyVacations = () => {
   return (
-    <div className='mt-5'>
+    <div className='mt-5 space-y-4'>
+      <div className='grid grid-cols-3 gap-4'>
+        {
+          requests.map((request) => {
+            return(
+              <div className='bg-white space-y-2 p-6'>
+                <div className='w-[60px] mb-2 text-[#6D5DD3] border-[2px] border-[#6D5DD3] font-bold text-[18px] h-[60px] items-center justify-center flex rounded-[50%]'>
+                  12
+                </div>
+                <p className='text-[#0A1629] font-bold text-[16px]'>{request.type}</p>
+                <p className='text-[#91929E] font-normal text-[12px]'>42/50 days available</p>
+              </div>
+            )
+          })
+        }
+      </div>
       <div className='space-y-4'>
         <p className='text-[#0A1629] font-bold text-[18px]'>My Requests</p>
         <div className='flex flex-col gap-4'>

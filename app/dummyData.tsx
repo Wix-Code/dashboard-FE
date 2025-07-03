@@ -45,6 +45,16 @@ type Request = {
   duration: string;
 }
 
+type Tasks = {
+  id: number;
+  spentTime: string;
+  priority: string;
+  status: string;
+  estimate: string;
+  image: string;
+  taskName: string;
+}
+
 export const sideBarLinks: SideBarLinks[] = [
   {
     id: 1,
@@ -325,5 +335,62 @@ export const requests: Request[] = [
     duration: "3 days",
     status: "Approved",
     type: "Sick Leave"
+  }
+]
+
+export const tasks : Tasks[] = [
+  {
+    id: 1,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    priority: "medium",
+    status: "Done",
+    estimate: "2d 4hrs",
+    spentTime: "4h 25mins",
+  },
+  {
+    id: 2,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    priority: "medium",
+    status: "Done",
+    estimate: "2d 4hrs",
+    spentTime: "4h 25mins",
+  },
+  {
+    id: 3,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    priority: "medium",
+    status: "Done",
+    estimate: "2d 4hrs",
+    spentTime: "4h 25mins",
+  },
+  {
+    id: 4,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    priority: "medium",
+    status: "To do",
+    estimate: "2d 4hrs",
+    spentTime: "4h 25mins",
+  },
+  {
+    id: 5,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    priority: "medium",
+    status: "In review",
+    estimate: "2d 4hrs",
+    spentTime: "4h 25mins",
+  },
+  {
+    id: 6,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Mind map",
+    priority: "low",
+    status: "In progress",
+    estimate: "2d 4hrs",
+    spentTime: "4h 25mins",
   }
 ]
