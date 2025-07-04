@@ -6,6 +6,7 @@ import SideBar from '../components/project/SideBar';
 import Rectangle from '../components/project/Rectangle';
 import Block from '../components/project/Block';
 import Page from '../components/project/Page';
+import DialogDemo from '../components/ui/Dialog';
 
 const ProjectsPage = () => {
   const [activeTab, setActiveTab] = useState<"rectangle" | "block" | "page">("rectangle");
@@ -56,15 +57,13 @@ const ProjectsPage = () => {
                 <AlignStartHorizontal className="w-[18px]" />
               </button>
             </div>
-
-            <button className="bg-[#ffffff] text-[#0A1629] text-[14px] font-bold w-8 h-8 rounded-[10px] flex items-center justify-center gap-1">
-              <Funnel className="w-[18px]" />
-            </button>
+        
+              <button className="bg-[#ffffff] text-[#0A1629] text-[14px] font-bold w-8 h-8 rounded-[10px] flex items-center justify-center gap-1">
+                <Funnel className="w-[18px]" />
+              </button>
+            
+            
           </div>
-
-          <button className="w-full text-[14px] font-bold text-[#0A1629] py-2.5 bg-[#E6EDF5] rounded-[20px]">
-            Active Tasks
-          </button>
 
           <div>
             {activeTab === "rectangle" ? (
