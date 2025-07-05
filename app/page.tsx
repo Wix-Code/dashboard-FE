@@ -4,7 +4,7 @@ import NearestEvents from './components/NearestEvents'
 
 export default function page() {
   return (
-    <div>
+    <div className='hide-scrollbar'>
       <div></div>
       <div>
         <p className='text-[#7D8592] text-[14px] font-medium'>Welcome back, Wisdom!</p>

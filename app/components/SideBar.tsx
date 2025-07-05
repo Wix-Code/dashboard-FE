@@ -5,7 +5,7 @@ import { LogIn, MessageCircle } from 'lucide-react'
 
 const SideBar = () => {
   return (
-    <div className='flex flex-[15%] overflow-y-scroll h-[100vh] sticky top-3 bg-white flex-col py-5 justify-between px-3 gap-4'>
+    <div className='flex flex-[15%] hide-scrollbar overflow-y-scroll h-[100vh] sticky top-0 bg-white flex-col py-5 justify-between px-3 gap-4'>
       <div>
         <img className='w-[40px] h-[40px]' src="./pic/com.png" alt="" />
         <div className='flex mt-2 flex-col gap-2'>

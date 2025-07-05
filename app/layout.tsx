@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Lora, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import SideBar from "./components/SideBar";
+import SearchBar from "./components/SearchBar";
 
 
 const geistSans = Geist({
@@ -31,9 +32,12 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <div className="flex hide-scrollbar gap-4 p-3">
+        <div className="flex gap-4">
           <SideBar />
-          <div className="flex-[85%]">
+          <div className="space-y-8 hide-scrollbar flex-[85%]">
+            <div className="mt-2">
+              <SearchBar />
+            </div>
             {children}
           </div>
         </div>
