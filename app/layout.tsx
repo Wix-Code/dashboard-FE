@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased`}
       >
-        <div className="flex gap-4 p-3">
+        <div className="flex hide-scrollbar gap-4 p-3">
           <SideBar />
           <div className="flex-[85%]">
             {children}

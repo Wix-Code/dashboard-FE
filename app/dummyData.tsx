@@ -55,6 +55,15 @@ type Tasks = {
   taskName: string;
 }
 
+type Notifications = {
+  id: number;
+  name?: string;
+  message?: string;
+  date?: string;
+  time?: string;
+  image?: string;
+  taskName?: string;
+}
 export const sideBarLinks: SideBarLinks[] = [
   {
     id: 1,
@@ -392,5 +401,50 @@ export const tasks : Tasks[] = [
     status: "In progress",
     estimate: "2d 4hrs",
     spentTime: "4h 25mins",
+  }
+]
+
+export const notifications : Notifications[] = [
+  {
+    id: 1,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+  },
+  {
+    id: 2,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+  },
+  {
+    id: 3,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+  },
+  {
+    id: 4,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+  },
+  {
+    id: 5,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+  },
+  {
+    id: 6,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
   }
 ]

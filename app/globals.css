@@ -125,3 +125,96 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Custom CSS for React Day Picker alignment */
+
+/* Container styling */
+.rdp {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Calendar table styling */
+.rdp-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed !important;
+}
+
+/* Header styling */
+.rdp-head_row,
+.rdp-row {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  gap: 2px !important;
+  width: 100% !important;
+}
+
+/* Day cells */
+.rdp-head_cell,
+.rdp-cell {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 4px !important;
+}
+
+/* Day buttons */
+.rdp-button {
+  width: 100% !important;
+  height: 32px !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Navigation buttons */
+.rdp-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 8px !important;
+}
+
+/* Month caption */
+.rdp-caption {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 8px 0 !important;
+}
+
+/* Remove default margins and padding */
+.rdp-months {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.rdp-month {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .rdp-button {
+    height: 28px !important;
+    font-size: 12px !important;
+  }
+  
+  .rdp-head_cell,
+  .rdp-cell {
+    padding: 2px !important;
+  }
+}

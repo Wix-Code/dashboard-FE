@@ -7,6 +7,8 @@ import Rectangle from '../components/project/Rectangle';
 import Block from '../components/project/Block';
 import Page from '../components/project/Page';
 import DialogDemo from '../components/ui/Dialog';
+import NotificationModal from '../components/ui/NotificationModal';
+import CalendarModal from '../components/ui/CalendarModal';
 
 const ProjectsPage = () => {
   const [activeTab, setActiveTab] = useState<"rectangle" | "block" | "page">("rectangle");
@@ -57,12 +59,12 @@ const ProjectsPage = () => {
                 <AlignStartHorizontal className="w-[18px]" />
               </button>
             </div>
-        
+            <CalendarModal>
               <button className="bg-[#ffffff] text-[#0A1629] text-[14px] font-bold w-8 h-8 rounded-[10px] flex items-center justify-center gap-1">
                 <Funnel className="w-[18px]" />
               </button>
             
-            
+            </CalendarModal>
           </div>
 
           <div>
