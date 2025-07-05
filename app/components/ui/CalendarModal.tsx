@@ -46,35 +46,37 @@ const CalendarModal = ({ children }: { children: React.ReactNode }) => {
                 </div>
               </div>
               <div className="p-4 rounded border-[1px]">
-        <DayPicker
-          mode="range"
-          //selected={selectedDates}
-                //onSelect={setSelectedDates}
-                showOutsideDays
-                navLayout="around"
-          className="w-full"
-          classNames={{
-            months: "w-full flex justify-center",
-            month: "w-full",
-            table: "w-full table-fixed",
-            head_row: "grid grid-cols-7 gap-1 w-full",
-            row: "grid grid-cols-7 gap-1 w-full",
-            head_cell: "w-full text-center p-2 text-sm font-medium text-gray-500",
-            cell: "w-full text-center p-1",
-            button: "w-full h-8 rounded flex items-center justify-center text-sm hover:bg-gray-100 transition-colors",
-            selected: "bg-blue-500 text-white hover:bg-blue-600",
-            nav: "flex justify-between items-center w-full px-2 py-2",
-            caption: "flex justify-center items-center w-full py-2 text-lg font-semibold",
-            nav_button: "p-1 rounded hover:bg-gray-100 transition-colors",
-            nav_button_previous: "text-gray-600",
-            nav_button_next: "text-gray-600"
-          }}
-          modifiersClassNames={{
-            today: "bg-gray-100 font-semibold"
-          }}
-        />
-      </div>
-              <div className="flex gap-2 items-center">
+                <DayPicker
+                  mode="range"
+                  //selected={selectedDates}
+                        //onSelect={setSelectedDates}
+                        showOutsideDays
+                        navLayout="around"
+                  className="w-full"
+                  classNames={{
+                    months: "w-full flex justify-center",
+                    month: "w-full",
+                    table: "w-full table-fixed",
+                    head_row: "grid grid-cols-7 gap-1 w-full",
+                    row: "grid grid-cols-7 gap-1 w-full",
+                    head_cell: "w-full text-center p-2 text-sm font-medium text-gray-500",
+                    cell: "w-full text-center p-1",
+                    button: "w-full h-8 rounded flex items-center justify-center text-sm hover:bg-gray-100 transition-colors",
+                    selected: "bg-blue-500 text-white hover:bg-blue-600",
+                    nav: "flex justify-between items-center w-full px-2 py-2",
+                    caption: "flex justify-center items-center w-full py-2 text-lg font-semibold",
+                    nav_button: "p-1 rounded hover:bg-gray-100 transition-colors",
+                    nav_button_previous: "text-gray-600",
+                    nav_button_next: "text-gray-600"
+                  }}
+                  modifiersClassNames={{
+                    today: "bg-gray-100 font-semibold"
+                  }}
+                />
+              </div>
+              {
+              isActive === "hours" && (
+                <div className="flex gap-2 items-center">
                 <div className="space-y-1 flex-1">
                   <p className="text-[12px] font-bold text-[#7D8592]">From</p>
                   <div className="text-[12px] rounded border-[1px] flex justify-between items-center px-2 py-1 font-normal text-[#7D8592]">
@@ -90,6 +92,8 @@ const CalendarModal = ({ children }: { children: React.ReactNode }) => {
                   </div>
                 </div>
               </div>
+                )
+              }
               <div className="px-5 py-3 rounded flex items-center justify-between bg-[#F4F9FD]">
                 <p className="text-[#0A1629] font-bold text-[14px]">Time for Vacation</p>
                 <p className="text-[#15C0E6] font-bold text-[24px]">4h 0mins</p>
