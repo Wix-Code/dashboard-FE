@@ -16,8 +16,8 @@ export default function MessengerLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex">
-      <aside className="w-[300px] border-r overflow-y-scroll hide-scrollbar bg-white">
+    <div className="flex sticky top-0">
+      <aside className="w-[300px] border-r sticky top-0 overflow-y-scroll hide-scrollbar bg-white">
         <div className="flex border-b-[1px] border-[#E6EBF5] px-4 h-[70px] justify-between items-center">
           <p className="font-bold text-[#0A1629] text-[16px]">Conversations</p>
           <div className="flex gap-3">

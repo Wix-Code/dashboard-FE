@@ -64,6 +64,18 @@ type Notifications = {
   image?: string;
   taskName?: string;
 }
+
+type Chats = {
+  id: number;
+  name?: string;
+  message?: string;
+  date?: string;
+  time?: string;
+  image?: string;
+  taskName?: string;
+  sender: "me" | "them"
+}
+
 export const sideBarLinks: SideBarLinks[] = [
   {
     id: 1,
@@ -452,5 +464,116 @@ export const notifications : Notifications[] = [
     message: "Updated the status of Mind Map task to In Progress",
     time: "Sep 11 | 8:15 pm",
     name: "Ogbonna Wisdom"
+  }
+]
+
+export const chats : Chats[] = [
+  {
+    id: 1,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Hi, Evan! Nice to meet you tooI will send you all the files I have for this project. After that, we can call and discuss. I will answer all your questions! OK?",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "them"
+  },
+  {
+    id: 2,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    name: "Ogbonna Wisdom",
+    time: "8:15 pm",
+    sender: "me"
+  },
+  {
+    id: 3,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Hi, Evan! Nice to meet you tooI will send you all the files I have for this project. After that, we can call and discuss. I will answer all your questions! OK?",
+    name: "Ogbonna Wisdom",
+    time: "8:15 pm",
+    sender: "them"
+  },
+  {
+    id: 4,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "me"
+  },
+  {
+    id: 5,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "them"
+  },
+  {
+    id: 6,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "me"
+  },
+  {
+    id: 7,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Hi, Evan! Nice to meet you tooI will send you all the files I have for this project. After that, we can call and discuss. I will answer all your questions! OK?",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "them"
+  },
+  {
+    id: 8,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    name: "Ogbonna Wisdom",
+    time: "8:15 pm",
+    sender: "me"
+  },
+  {
+    id: 9,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Hi, Evan! Nice to meet you tooI will send you all the files I have for this project. After that, we can call and discuss. I will answer all your questions! OK?",
+    name: "Ogbonna Wisdom",
+    time: "8:15 pm",
+    sender: "them"
+  },
+  {
+    id: 10,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "me"
+  },
+  {
+    id: 11,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "8:15 pm",
+    sender: "them",
+    name: "Ogbonna Wisdom"
+  },
+  {
+    id: 12,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "8:15 pm",
+    name: "Ogbonna Wisdom",
+    sender: "me"
   }
 ]

@@ -1,6 +1,7 @@
 // app/messenger/[id]/page.tsx
 "use client"
-import { EllipsisVertical, Pin, Search } from "lucide-react";
+import { chats } from "@/app/dummyData";
+import { AtSign, EllipsisVertical, Link, Paperclip, Pin, Search } from "lucide-react";
 import { useParams } from "next/navigation";
 
 const ChatPage = () => {
@@ -10,7 +11,7 @@ const ChatPage = () => {
   return (
     <div className="bg-white">
       <div className="flex items-center h-[70px] px-4 border-b-[1px] border-[#E6EBF5] justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex sticky top-0 items-center gap-3">
           <div className="w-[44px] h-[44px] rounded-full overflow-hidden flex-shrink-0">
             <img 
               className="w-full h-full object-cover" 
@@ -35,8 +36,54 @@ const ChatPage = () => {
           </button>
         </div>
       </div>
-      <h1 className="text-xl font-bold mb-4">Chat with ID: {chatId}</h1>
-      <p>This is the conversation view.</p>
+      <div className="space-y-2  mb-3 px-1.5 py-4">
+        {chats.map((chat) => (
+          <div key={chat.id} className={`flex ${chat.sender === "me" ? "justify-end" : "justify-start"}`}>
+            <div className={`
+            max-w-[75%] rounded-lg px-3 py-2 
+            ${chat.sender === "me" ? "bg-[#3F8CFF] text-white rounded-br-none" : "bg-[#F4F9FD] text-[#0A1629] rounded-bl-none"}
+          `}>
+              <div className="w-[40px] h-[40px] rounded-full overflow-hidden flex-shrink-0">
+                <img 
+                  className="w-full h-full object-cover" 
+                  src={chat.image} 
+                  alt="" 
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-between items-center">
+                  <p className="text-[#0A1629] font-bold text-[14px]">{chat.name}</p>
+                  <p className="text-[#7D8592] font-normal text-[10px]">{chat.time}</p>
+                </div>
+                <div className="flex justify-between items-center">
+                  <p className="text-[#91929E] font-normal text-[12px]">{chat.message}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="border-[#D8E0F0] bg-white bottom-0 sticky absolute gap-3 px-[20px] items-center flex border-[1px] p-1 rounded">
+        <button>
+          <Paperclip className="w-[18px] text-[#6D5DD3]" />
+        </button>
+        <button>
+          <Link className="w-[18px] text-[#15C0E6]" />
+        </button>
+        <button>
+          <AtSign className="w-[18px] text-[#3F8CFF]" />
+        </button>
+        <textarea
+          placeholder="Type your messsge here"
+          className="resize-none text-[#7D8592] text-[14px] font-normal hide-scrollbar outline-none flex-1"
+        />
+        <button>
+          <AtSign className="w-[18px] text-[#FDC748]" />
+        </button>
+        <button>
+          <AtSign />
+        </button>
+      </div>
     </div>
   );
 };
