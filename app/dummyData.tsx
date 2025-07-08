@@ -411,12 +411,14 @@ export const notifications : Notifications[] = [
     taskName: "Research",
     message: "Updated the status of Mind Map task to In Progress",
     time: "Sep 11 | 8:15 pm",
+    name: "Ogbonna Wisdom"
   },
   {
     id: 2,
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
     taskName: "Research",
     message: "Updated the status of Mind Map task to In Progress",
+    name: "Ogbonna Wisdom",
     time: "Sep 11 | 8:15 pm",
   },
   {
@@ -424,6 +426,7 @@ export const notifications : Notifications[] = [
     image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
     taskName: "Research",
     message: "Updated the status of Mind Map task to In Progress",
+    name: "Ogbonna Wisdom",
     time: "Sep 11 | 8:15 pm",
   },
   {
@@ -432,6 +435,7 @@ export const notifications : Notifications[] = [
     taskName: "Research",
     message: "Updated the status of Mind Map task to In Progress",
     time: "Sep 11 | 8:15 pm",
+    name: "Ogbonna Wisdom"
   },
   {
     id: 5,
@@ -439,6 +443,7 @@ export const notifications : Notifications[] = [
     taskName: "Research",
     message: "Updated the status of Mind Map task to In Progress",
     time: "Sep 11 | 8:15 pm",
+    name: "Ogbonna Wisdom"
   },
   {
     id: 6,
@@ -446,5 +451,6 @@ export const notifications : Notifications[] = [
     taskName: "Research",
     message: "Updated the status of Mind Map task to In Progress",
     time: "Sep 11 | 8:15 pm",
+    name: "Ogbonna Wisdom"
   }
 ]
