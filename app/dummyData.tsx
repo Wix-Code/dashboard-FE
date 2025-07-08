@@ -464,6 +464,22 @@ export const notifications : Notifications[] = [
     message: "Updated the status of Mind Map task to In Progress",
     time: "Sep 11 | 8:15 pm",
     name: "Ogbonna Wisdom"
+  },
+  {
+    id: 7,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+    name: "Ogbonna Wisdom"
+  },
+  {
+    id: 8,
+    image: "https://thumbs.dreamstime.com/b/teenage-girl-cup-12997365.jpg",
+    taskName: "Research",
+    message: "Updated the status of Mind Map task to In Progress",
+    time: "Sep 11 | 8:15 pm",
+    name: "Ogbonna Wisdom"
   }
 ]
 

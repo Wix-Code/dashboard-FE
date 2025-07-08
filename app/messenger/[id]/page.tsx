@@ -1,7 +1,7 @@
 // app/messenger/[id]/page.tsx
 "use client"
 import { chats } from "@/app/dummyData";
-import { AtSign, Edit, Edit2, EllipsisVertical, Link, MessageCircleMore, Paperclip, Pin, Search, Trash2 } from "lucide-react";
+import { AtSign, Edit, Edit2, EllipsisVertical, Link, MessageCircleMore, Paperclip, Pin, Search, Share2, Trash2 } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 
@@ -104,7 +104,7 @@ const ChatPage = () => {
                     className="p-1.5 cursor-pointer hover:bg-red-50 rounded transition-colors"
                     title="Delete"
                   >
-                    <Trash2 size={16} className="text-[#0A1629]" />
+                    <Share2 size={16} className="text-[#0A1629]" />
                   </button>
                   <button
                     onClick={(e) => {
